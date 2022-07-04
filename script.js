@@ -40,3 +40,17 @@ function draw(x2, y2) {
   x = x2;
   y = y2;
 }
+
+function drawLine(x1, y1, x2, y2) {
+  c.beginPath();
+  c.moveTo(x1, y1);
+  c.lineTo(x2, y2);
+  c.strokeStyle = c.fillStyle;
+
+  c.lineWidth = penSize * 2;
+  c.stroke();
+}
+
+document.querySelector('.fa-refresh').addEventListener('click', function () {
+  c.clearRect(0, 0, canvas.width, canvas.height);
+});
