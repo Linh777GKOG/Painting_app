@@ -76,3 +76,10 @@ const favColor = (elem) => {
   removeActiveCircleColor();
   c.fillStyle = elem.value;
 };
+
+document
+  .querySelector('a')
+  .addEventListener(
+    'click',
+    (event) => (event.target.href = canvas.toDataURL())
+  );
