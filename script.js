@@ -13,3 +13,16 @@ canvas.addEventListener('mousedown', (e) => {
   x = e.offsetX;
   y = e.offsetY;
 });
+
+canvas.addEventListener('mouseup', () => {
+  isDrawing = false;
+  x = undefined;
+  y = undefined;
+});
+
+canvas.addEventListener('mousemove', (event) => {
+  draw(event.offsetX, event.offsetY);
+});
+
+c.fillStyle = 'hotpink';
+c.strokeStyle = c.fillStyle;
