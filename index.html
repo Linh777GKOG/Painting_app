@@ -71,6 +71,25 @@
           onchange="favColor(this)"
         />
       </div>
+      <div id="pen-size" class="pen-size">
+        <label for="pen-size"><i class="fa fa-pencil"></i> Pen size</label>
+        <input
+          type="range"
+          name="pen-size"
+          id="pen-size"
+          value="10"
+          step="5"
+          min="5"
+          max="40"
+          onchange="penSizeChange(this.value)"
+        />
+      </div>
     </div>
+
+    <div class="board">
+      <canvas width="800px" height="590"></canvas>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
